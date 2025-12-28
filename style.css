@@ -180,3 +180,107 @@ h2 { font-size: 2.5em; border-bottom: 2px solid var(--border-color); }
     margin-top: 5px;
     opacity: 0.7;
 }
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        background-attachment: scroll; /* Fix mobile background issues */
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    h1.main-title {
+        font-size: 3em; /* Smaller on mobile */
+        line-height: 1.1;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    .main-nav {
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .page-section {
+        padding: 60px 15px 30px;
+    }
+    
+    .chapter-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .chapter-link {
+        padding: 15px;
+        font-size: 1.1em;
+    }
+    
+    .chapter-link:hover {
+        transform: translateY(-5px); /* Less movement on mobile */
+    }
+    
+    .verse-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .verse-card h4 {
+        font-size: 1.2em;
+    }
+    
+    .sanskrit {
+        font-size: 1.1em;
+    }
+    
+    .chapter-intro {
+        font-size: 1.1em;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1.main-title {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .chapter-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+    }
+    
+    .chapter-link {
+        padding: 12px;
+        font-size: 1em;
+    }
+    
+    .verse-card {
+        padding: 15px;
+    }
+    
+    .main-nav {
+        text-align: center;
+    }
+    
+    .nav-links {
+        margin-top: 10px;
+    }
+}
