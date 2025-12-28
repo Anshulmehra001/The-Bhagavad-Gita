@@ -18,6 +18,8 @@ The Bhagavad Gita is a 700-verse Hindu scripture that is part of the epic Mahabh
 
 Visit the live site: [The Bhagavad Gita](https://anshulmehra001.github.io/The-Bhagavad-Gita/)
 
+*Last updated: December 2024*
+
 ## Local Development
 
 1. Clone the repository:
